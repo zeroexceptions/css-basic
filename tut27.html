@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+
+  /* z index doesnot apply on static position  */
+        .box{
+            width: 170px;
+            height:170px;
+            border:2px solid black;
+        }
+        #box1{
+            z-index: 6px;
+            position: relative;
+            top: 49px;
+            background-color: rgb(224, 45, 45);
+        }
+        #box2{
+            z-index: 5px;
+            top:9px;
+            position: relative;
+            background-color: rgb(48, 233, 23);
+        }
+        #box3{
+            /* dis none us chhez ko hta deta  */
+            /* display:none; */
+
+            /* yh us chhez ko chupata na ky htata  */
+          /* visibility: hidden; */
+            background-color: rgb(231, 210, 19);
+        }
+        #box4{
+            background-color: rgb(37, 110, 158);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

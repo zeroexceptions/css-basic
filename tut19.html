@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and backgrounds,,Height,width</title>
+    <style>
+      
+#first{
+    border: 4px solid red;
+    width: 160px;
+    border-radius: 5px;
+    
+}
+#second{
+    border-right: 10px solid red;
+     width:160px;
+     border-top:10px solid rgb(32, 60, 218);
+     border-bottom:10px solid green;
+     border-left:10px solid rgb(245, 222, 20);
+
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     border-bottom-left-radius: 4px;
+     border-bottom-right-radius: 4px ;
+}
+#third
+{
+
+background-image: url('ABQJ9137.jpg');
+height:1000px;
+width: 800px;
+border:3px solid red;
+/* is se image repeat ni hoti hai line 36  */
+background-repeat: no-repeat; 
+ 
+/* phli value x ki or dosri y ki line 39 */
+/*  center bottom 
+y ki jgha top ni askta */
+background-position: 10px 120px; 
+}
+    </style>
+</head>
+<body>
+<h4>this is first heading.</h4>
+    <p id="first">  &nbsp; this is first paragraph</p>
+
+    <h4>this is second heading.</h4>
+    <p id="second">this is second paragraph</p>
+
+    <h4>this is third heading.</h4>
+    <p id="third">this is third paragraph</p>
+</body>
+</html>

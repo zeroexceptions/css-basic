@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+       .box{
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        /* transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 2s; */
+
+        /* above four properties can be set in one line below  */
+        /* all btata hai k sari property py transition ho agr jese above line transition property 
+        set ki hai me bs bg color set kro ga to transition or kisi py apply ni hogi */
+     transition: all 1s ease-in-out 1s;
+       }
+      
+       .box:hover{
+        background-color: red;
+       }
+           
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">this is my box </div>
+</body>
+</html>
+
+
+
+<!-- 
+    ransitions: Transitions enable smooth and gradual changes in an element's property values over a specified duration. They are typically triggered by a change in state, such as a hover or click event. Transitions have two main states: the initial state and the final state. The transition defines how the element transitions from the initial state to the final state, animating the intermediate property values. Commonly animated properties include opacity, color, width, height, and transform. Transitions are controlled by properties such as transition-property, transition-duration, transition-timing-function, and transition-delay.
+
+Animations: Animations allow you to define complex and dynamic sequences of keyframes that specify the element's appearance and behavior at different points in time. Unlike transitions, animations can have multiple keyframes, defining intermediate states and the exact timing of those states. Each keyframe contains property values for the element at a specific percentage or time along the animation's duration. Animations can be controlled by properties such as animation-name, animation-duration, animation-timing-function, animation-delay, and animation-iteration-count. Additionally, animations often require the @keyframes rule to define the keyframes and their associated styles.
+
+In summary, transitions are primarily used for simple property changes between two states, triggered by events like hover or click, while animations allow for more complex and multi-stage transformations involving multiple keyframes and timing sequences. Animations offer greater control and flexibility but also require more detailed keyframe definitions, whereas transitions are simpler to implement for basic state changes.
+
+
+
+
+
+
+
+ -->

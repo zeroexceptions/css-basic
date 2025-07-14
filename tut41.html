@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows and gaps</title>
+    <style>
+        .box{
+
+            background-color: blanchedalmond;
+            border:2px solid skyblue;
+           
+          
+            
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 2fr 4fr;
+            grid-auto-rows: 3fr;
+            grid-template-columns: 2fr 2fr ;
+            grid-gap: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box no-1</div>
+        <div class="box">This is box no-2</div>
+        <div class="box">This is box no-3</div>
+        <div class="box">This is box no-4</div>
+        <div class="box">This is box no-5</div>
+        <div class="box">This is box no-6</div>
+        <div class="box">This is box no-7</div>
+        <div class="box">This is box no-8</div>
+        <div class="box">This is box no-9</div>
+        <div class="box">This is box no-10</div>
+    </div>
+</body>
+</html>

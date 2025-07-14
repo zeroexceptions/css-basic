@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding css using js</title>
+</head>
+<body>
+    
+   <p id="item" >farooq haider alvi </p>
+
+  
+
+
+    <script>
+
+
+        function func(){
+            let contain=document.getElementById('item');
+              
+            // contain.innerHTML="<button>farooq</button>";
+            let b=document.createElement('button');
+            b.innerText="clickme";
+            contain.appendChild(b);
+           
+            
+                  const a='ahsan';
+                  console.log(a);
+                  a=9;
+                  console.log(a);
+               
+        }
+
+         const great=()=>"farooq";
+
+console.log(great());
+    //     let contain=document.getElementById('item');
+    //    contain.addeventlistener('click',function(){
+    //     //    contain.style.border="2px solid red";
+    //     alert('farooq');
+    //    })
+    </script>
+</body>
+</html>

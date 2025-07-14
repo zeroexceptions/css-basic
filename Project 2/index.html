@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Baloo+Chettan+2:wght@700&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width:900px)" href="phone39.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            top:0px;
+              position: sticky;  
+
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: rgb(26, 12, 12);
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            height: 70%;
+            top: 0cm;
+            /* top:0;
+       bottom: 0; */
+            opacity: 0.7;
+        }
+
+
+
+        #mylogo img {
+            margin: 15px 3px;
+            width: 40px;
+            border-radius: 40px;
+            margin-bottom: 35px;
+
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar ul li {
+            font-family: 'Baloo 2', cursive;
+            font-family: 'Baloo Chettan 2', cursive;
+            display: flex;
+            list-style: none;
+            font-size: 18px;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 3px 22px;
+            text-decoration: none;
+            color: white;
+            border-radius: 20px;
+            margin: 0px 10px;
+            margin-bottom: 20px;
+
+        }
+
+        #navbar ul li a:hover{ 
+            display: block;
+
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+
+        }
+        /* #navbar ul li a.active  */
+        #home {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin: 30px 40px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #home::before {
+            content: "";
+            background: url('back16.jpg') no-repeat center center/cover;
+
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            /* top:0;s
+       bottom: 0; * */
+            opacity: 0.89;
+            top: 0ch;
+
+        }
+
+        #home h1 {
+            text-align: center;
+
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .primary {
+            font-size: 2.8rem;
+            padding: 12px;
+            color: rgb(250, 250, 250);
+        }
+
+        .btn {
+            padding: 5px 5px;
+            margin: 17px;
+            border: 2px solid white;
+            font-size: 1.3rem;
+            font-family: 'Baloo Chettan 2', cursive;
+            background-color: blanchedalmond;
+            cursor: pointer;
+            border-radius: 20px;
+            /* color:white; */
+
+        }
+
+        .h-primary {
+            font-size: 2rem;
+            padding: 12px;
+        }
+
+        .h-sec {
+            font-size: 2rem;
+            padding: 12px;
+        }
+
+        .btn:hover {
+            color: white;
+
+        }
+
+        #services {
+            display: flex;
+
+        }
+
+        #services .box {
+            border: 2px solid red;
+            width: 30%;
+            padding: 12px;
+            margin: 3px 12px;
+            border-radius: 28px;
+            background-color: rgb(243, 231, 212);
+
+
+        }
+
+        #services .box img {
+            height: 160px;
+            display: block;
+            margin: auto;
+        }
+
+        #ser2 img {
+            width: 250px;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .services-container {
+            margin-top: 100px;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        .box h2 {
+            font-size: 1rem;
+            /* color: white;  */
+        }
+
+        #client-section {
+            height: 344px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('back5.jpg') no-repeat center/cover;
+
+            width: 100%;
+            height: 60%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #clients img {
+            height: 70px;
+        }
+
+        .client-item {
+            padding: 34px;
+        }
+
+        #client-section {
+            margin-top: 15px;
+        }
+
+        #contact {
+            position: relative;
+
+
+        }
+
+        #contact::before {
+
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('clients.png') no-repeat center center/cover;
+
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="mylogo">
+            <img src="myimage.png" alt="onlne food service">
+        </div>
+        <ul>
+            <li class="item"><a href="" class="active">Home</a></li>
+            <li class="item"><a href="a">Services</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+            <li class="item"><a href="a">About us</a></li>
+
+
+
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="primary">Welcome to my site.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, molestiae.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button class="btn">Order food</button>
+    </section>
+
+    <section class="services-container">
+    
+        <h1 class="h-primary center down">Our Services</h1> 
+    
+        <div id="services">
+            <div class="box">
+                <div id="ser1">
+                    <img src="pizza1.jpg" alt="my pizza">
+                </div>
+                <h2 class="h-sec center">
+                    Food ordering
+                </h2>
+                <p class="center">Lorem ipsum dolor, sit amet co
+                    nsectetur adipisicing elit. Quo tempore v
+                    eniam pariatur dicta iusto corr
+                    upti atque ut qui amet! Consequatur.</p>
+            </div>
+            <div class="box">
+                <div id="ser2">
+                    <img src="back1.jpg" alt="my pizza">
+                </div>
+                <h2 class="h-sec center">
+                    Food ordering
+                </h2>
+                <p class="center">Lorem ipsum dolor, sit amet co
+                    nsectetur adipisicing elit. Quo tempore v
+                    eniam pariatur dicta iusto corr
+                    upti atque ut qui amet! Consequatur.</p>
+
+
+
+            </div>
+            <div class="box">
+                <div id="ser3">
+                    <img src="deliverpizza.jpg" alt="my pizza">
+                </div>
+                <h2 class="h-sec center">
+                    Food delivery
+                </h2>
+                <p class="center">Lorem ipsum dolor, sit amet co
+                    nsectetur adipisicing elit. Quo tempore v
+                    eniam pariatur dicta iusto corr
+                    upti atque ut qui amet! Consequatur.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center"> Customers and Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="skype.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="microsoft.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="hp.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="apple.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="backend.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="name" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <div class="center">
+        <footer>
+            Copyright &copy; www.onlinefoodblog.com. All rights reserved!
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

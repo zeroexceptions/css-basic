@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Objects Creation</title>
+</head>
+<body>
+    
+    <div>Farooq haider alvi </div>
+
+
+    <script>
+        // constructor pattern object creation 
+        // function f(n,a) {
+        //     this.name=n;
+        //     this.age=a;
+        //     //  console.log(this.age);
+        //     //  console.log(this.name);
+             
+        // }
+        
+        // let a=new f('farooq',22);
+        // console.log(a.name);
+
+
+
+        //////////////////////////////////////////////////////
+        // factory pattern 
+        // function func(name) {
+            
+        //     let obj=new Object();
+        //     obj.roll=name;
+        //     return obj;
+        // }
+           
+        // let a=func(12);
+        // console.log(a.roll);
+
+
+
+
+
+
+        //////////////////////////////
+        // prototype pattern 
+
+        // var car={
+        //       name:"imran",
+        //       age:22
+        // }
+         
+        // let c=Object.create(car);
+        // console.log(c.name);
+
+
+        //   call call function like this 
+         let farooq=function(){
+             b=9;
+             return b;
+         }
+         console.log(farooq());
+
+
+        //  arrow function 
+
+        let a=()=>{
+            console.log('love me like you do');
+        }
+        a();
+           
+        
+
+    </script>
+</body>
+</html>

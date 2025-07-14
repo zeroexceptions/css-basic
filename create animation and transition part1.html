@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        /* steps to create animation */
+        /* phly animation k name btao  */
+        /* phir animation duration btao  */
+        /* phir animation count btao */
+        /* phir keyframe k through animation bnao */
+        
+        .box
+        {
+          --bg-color:rgb(232, 62, 62);
+           width: 200px;
+           height: 200px;
+           text-align: center;
+            background-color: var(--bg-color);
+            animation-name: fadeIn;
+            animation-duration: 2s;
+
+            animation-iteration-count: infinite;
+            /* timing function btata hai animation slow chly phir fast */
+            animation-timing-function: ease-in-out;
+
+              /*agr animation reverse chalana ho tu yh wali property define krlo  */
+         animation-direction: reverse;
+
+
+         /* above properties ko ek sth define kr skty hai  */
+         /* animation: animation-name animation-duration timing-func animation-delay animation-count animation-fill-mode ; */
+         /* animation:fadeIn 3s ease-in-out 1s 4s */
+        }
+
+
+        
+        /* hm key frames k through animation define krty hai */
+        /* or 0% 25% yh btata k kitny percent time py kya hoga */
+         @keyframes farooq1 {
+            0%
+            {
+               
+               left:00px;
+               top:0px;
+            }
+            20%{
+                   top:0px;
+                   left:200px;
+
+            }
+            50%
+            {
+                    top:200px;  
+                    left:200px; 
+            }
+            75%{
+                top:200px;
+                left:0px;
+            }
+            100%
+            {
+                top:0;
+            }
+        } 
+
+        @keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  50%{
+    opacity:0.6;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+ 
+/* from or to k through bi keyframes define hoty hai jis sy 
+shoro ka yani yha se shoro ho or to yani yha py ja ky khtm ho 
+or % waly me 0% py yani 0 time 50% half time py wo animation define hogy */
+
+        /* @keyframes Farooq {
+            from
+            {
+                width :200px;
+                background-color: coral;
+            }
+            to{
+                width:100%;
+                background-color: yellow;
+                border:2px solid red;
+            }
+        } */
+      
+        
+element.style {
+    transform: rotateY(360deg);
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+
+    </body>
+
+</html>

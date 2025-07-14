@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Listening</title>
+    <style>
+        #btn{
+            color: white;
+            background-color: red;
+            margin-top: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Farooq haider
+        <!-- Browser Events:
+         click
+         mouseover / mouseout
+         mouse down / mouseup 
+
+         submit 
+         focus  -->
+
+
+
+
+
+    </div>
+    <div id="container"> Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Minima magni temporibus
+        inventore maxime reiciendis,
+        distinctio aperiam itaque dolor.
+        Corporis veniam quidem vitae
+        voluptatem neque ratione,
+        sequi consequuntur recusandae
+        officiis vel.</div>
+
+
+        <button id="btn" onclick="func() ">Subscribe</button>
+    <script>
+  
+       let contain=document.getElementById('container');
+       contain.addEventListener('mouseover',function func1(){  
+         
+         contain.style.display='none';       
+       })
+
+       contain.addEventListener('mouseout',function func2(){  
+         
+         contain.style.display='block';       
+       })
+
+       
+       
+        function func()
+        {
+            // let btn=document.getElementById('btn');
+            let container=document.getElementById('container');
+            if(container.style.display!='none')
+            {
+                container.style.display='none';
+            }
+            else 
+            {
+                container.style.display='block';
+            }
+        }
+    </script>
+</body>
+
+</html>

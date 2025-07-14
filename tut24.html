@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+     box-sizing: border-box;
+        }
+        /* block elemnt ki height or width set krskty hai; pr yh pori jga ly ga*/
+        /* inline block ko center bi  krskty or 
+        height or width set krskty */
+        /* agr margin:auto se center me krna to phir hmy box sizing border */ */
+         /* box or width deni hogi or jisy center me krna me usy block element  */
+         /* /* hona chahiye taky wo puri width k hisab se center me asky  */
+
+
+        header{
+            border: 3px solid red;
+            margin: auto;
+            width:1200px;
+            
+        }
+        img{
+            display:block;
+            width:34px;
+            margin: auto;
+        }
+        h3{
+            text-align: center;
+            margin:0px;
+        }
+        .box{
+            border:2px solid rgb(19, 129, 133);
+            margin: 3px 0px;
+            padding: 23px;
+            box-sizing: border-box;
+            width:33%;
+            display: inline-block;
+        }
+        .container{
+            margin:auto;
+           
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="farooq.PNG" alt="not found">
+        <h3>Welcome to my Blog.</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+        <h4 class="Heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet con
+            sectetur adipisicing elit. Dicta,
+             numquam. Tenetur, tempore. In qui 
+             quod harum saepe illo repudia
+             ndae nisi?</p>
+  </div>
+      <div class="box">
+  <h4 class="Heading">Heading</h4>
+  <p>Lorem ipsum dolor sit amet con
+  sectetur adipisicing elit. Dicta,
+  numquam. Tenetur, tempore. In qui 
+  quod harum saepe illo repudia
+   ndae nisi?</p>
+  </div>
+ <div class="box">
+   <h4 class="Heading">Heading</h4>
+  <p>Lorem ipsum dolor sit amet con
+    sectetur adipisicing elit. Dicta,
+        numquam. Tenetur, tempore. In qui 
+                             quod harum saepe illo repudia
+         ndae nisi?</p>
+            </div>
+
+
+    </div>
+</body>
+</html>

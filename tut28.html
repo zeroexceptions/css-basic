@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+ <style>
+
+     .container{
+         height: 500px;
+         width: 100%;
+         border: 2px solid black;
+         display: flex;
+
+         /* flex properties for 
+         flex box and use for mobile view 
+    by default flex is in row       */
+        /* flex-direction: column-reverse;
+        flex-direction: row-reverse;
+        flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        /* to vertically center the content  */
+        /* align-items: center; */
+        /* is property ko use kr 
+        hum ek dba bnaya us me nav bar k element ko equally 
+        place krskty hai */
+        /* justify-content: space-between; */
+
+        /* align-items: center; */
+        /* container me cheezon ko vertically incenter krny k lye  */
+     }
+     .item
+     {
+         width:200px;
+         height:200px;
+         background-color: blanchedalmond;
+         margin:10px;
+         padding:3px;
+         border:2px solid rgb(5, 124, 235)
+     }
+     #item1{
+/* order jitna zyada content utna pechy jaye ga 
+by default order is zero */
+        /* order: 2;  */
+        /* zyada space occupy kry ga 3 times than original space it occupies   */
+        /* flex-grow: 3; */
+
+        flex-basis: 300px;
+/* when flex display is set to row flex basis will control 
+width 
+when flex display is set to column it will control 
+height  */
+
+
+     }
+     #item2{
+         /* order: 6; */
+        }
+        #item3{
+         /* order: 5; */
+        }
+ </style>
+</head>
+<body>
+    <h1>This is Flex box.</h1>
+    <div class="container">
+<div class="item" id="item1">First</div>
+<div class="item" id="item2">second</div>
+<div class="item" id="item3">Third</div>
+<div class="item" id="item4">fourth</div>
+<div class="item" id="item5">fifth</div>
+<div class="item" id="item6">sixth</div>
+
+    </div>
+</body>
+</html>

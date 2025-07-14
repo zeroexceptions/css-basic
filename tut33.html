@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            background-color: black;
+        }
+
+        header::before {
+            /* before psuedo selector se image 
+lagany k lye position 
+absolute krna prti hai o
+r width or height bi
+set krna hoti hai  */
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            
+       position: absolute;
+       width: 100%;
+       z-index: -1;
+       height: 100%;
+       top:0;
+       bottom: 0;
+       opacity: 0.3;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            list-style: none;
+
+            /* padding: 14px 15px; */
+            margin: 5px 5px;
+        }
+
+        /* height is vertical width is horizontal  */
+        section {
+            /* to center horizontally  */
+            text-align: center;
+            height: 245px;
+            margin: 5px 290px;
+            display: flex;
+            flex-direction: column;
+
+            /* to center vertically  */
+            justify-content: center;
+        }
+
+        /* section is not a class  */
+
+        /* section::before {
+            content: "This is content before."
+        } */
+
+        h3 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="container">
+                <li class="item">Home</li>
+                <li class="item">Contact us</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to my blog</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. In repellendus odio nesciunt voluptatum
+            laborum eius veritatis eos excepturi quaerat
+            ducimus!</p>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css box models</title>
+    <style>
+        *{
+
+           
+          
+        }
+        body{
+            background-color: rgb(190, 196, 182);
+        }
+    .container{
+        background-color: blanchedalmond;
+        border:2px solid rgb(201, 112, 112);
+        /* (top,right,bottom,left,)trbl */
+        /* first value is for top and respectively; */
+       /* we can also set margin/padding like padding-top:; */
+       /* can give padding margin like this  */
+       /* top/bottom(y) and left/righy (x) */
+       /* margin:34px for top bottm ,4px for left right  */
+        margin: 2px 2px;  
+           margin-top: 30px; 
+         padding: 40px ;
+         width: 29%;
+        border-radius: 20px;
+       /* display: inline-block; */
+       box-sizing: border-box;
+
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <div  class ="container">
+        <h3>this is my first heading.</h3>
+        <p id="first"> Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Dolores blanditiis acc
+            usamus rem, cumque provident impedit nulla maiores.</p>
+    </div>
+    <div class ="container">
+        <h3>this is my first heading.</h3>
+        <p id="second"> Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Dolores blanditiis acc
+            usamus rem, cumque provident impedit nulla maiores.</p>
+    </div>
+    <div class ="container">
+        <h3>this is my first heading.</h3>
+        <p id="third"> Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Dolores blanditiis acc
+            usamus rem, cumque provident impedit nulla maiores.</p>
+    </div>
+
+</body>
+</html>

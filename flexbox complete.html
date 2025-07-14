@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+    .flex-container{
+        display: flex;
+        border: 1px solid black;
+        padding: 2px;
+       flex-direction: row;
+        height: 200px;
+          align-items: center;
+          justify-content: center;
+          
+     
+    }
+    .inner-flex{
+        display: flex;
+    }
+    .flex-container>div{
+        border: 2px solid red;
+        padding: 10px;
+        margin: 10px;
+        height: 10px;
+        width: 20px;
+    }
+ 
+    /* .flex-container>:nth-child(2){
+       flex-grow: 2;
+    }
+    .flex-container>:nth-child(1){
+       flex-grow: 2;
+    } */
+  nav,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    height: 100px;
+    margin-top: 5px;
+  }
+  main{
+    margin-top:10px;
+    display: flex;
+    border: 2px solid red;
+    height: 300px;
+    
+    align-items: center;
+    align-items: stretch;
+  }
+
+  main>div{
+border: 2px solid green;
+ width: 20%;
+ /* height: 80%; */
+ text-align: center;
+ margin: 5px 10px;
+  }
+  main>:nth-child(2){
+    flex-grow: 2;
+  }
+
+  .centered-text {
+      /* Make the text a block-level element */
+      vertical-align: middle; /* Vertically center the text */
+      line-height: 20px; /* Set the line height equal to the container height */
+    }
+
+    @media screen and (max-width: 600px) {
+  main{
+    flex-direction: column;
+    
+  }
+  main>div{
+    width:90%;
+  }
+}
+    </style>
+</head>
+<body>
+    
+
+
+   
+    <nav>
+        <h1>Main Heading</h1>
+    </nav>
+   <main>
+     <div class="centered-text">aside 1</div>
+     <div>aside 2</div>
+     <div>aside 3</div>
+   </main>
+
+   <footer>
+    <h2>I am footer</h2>
+   </footer>
+
+
+  
+</body>
+</html>
+<!-- 
+  The flexible box layout module, usually referred to as flexbox, 
+  was designed as a one-dimensional layout model,
+  
+  align-content
+    	Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+align-items
+	Vertically aligns the flex items when the items do not use all available space on the cross-axis
+display
+	Specifies the type of box used for an HTML element
+flex-direction
+	Specifies the direction of the flexible items inside a flex container
+flex-flow
+	A shorthand property for flex-direction and flex-wrap
+flex-wrap	
+      Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+justify-content
+	Horizontally aligns the flex items when the items do not use all available space on the main-axis -->
+
+    <!-- ================ -->
+
+<!-- properties of flex items or child of flex container 
+
+align-self
+	Specifies the alignment for a flex item (overrides the flex container's align-items property)
+flex
+	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+flex-basis
+	Specifies the initial length of a flex item
+flex-grow
+	Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+flex-shrink
+	Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+order	
+Specifies the order of the flex items inside the same container
+
+
+-->

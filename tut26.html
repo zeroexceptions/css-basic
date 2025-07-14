@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css26.css">
+                   
+    <style>
+        body {
+            font-family: 'Baloo Bhaina 2', cursive;
+            background-image: url('firstsite.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0px;
+            margin: 0px;
+            color: white;
+
+
+
+        }
+
+
+        .left {
+            /* border:2px solid red; */
+            display: inline-block;
+            left: 34px;
+            top: 18px;
+            position: absolute;
+            line-height: 20px;
+
+        }
+
+        .right {
+            /* border:2px solid rgb(224, 221, 38); */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+        }
+
+        .mid {
+
+            /* border:2px solid rgb(90, 218, 51); */
+            /* three condition to set things in
+         center are below */
+            display: block;
+
+            margin: 18px auto;
+
+            width: 40%;
+        }
+
+        .nevbar {
+            display: inline-block;
+        }
+
+        .nevbar li {
+            display: inline-block;
+
+        }
+
+        .nevbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 34px 20px;
+            font-size: 20px;
+        }
+
+        .nevbar li a:hover,
+        .nevbar li a.active {
+            color: rgb(240, 41, 41);
+            text-decoration: underline;
+        }
+
+        .left img {
+            /* to change colour of image filter is used*/
+            filter: invert(100%);
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .btn:hover {
+            color: rgb(236, 38, 24);
+        }
+
+        .container {
+            /* border :2px solid white; */
+            display: block;
+            margin: 116px 40px;
+            width: 40%;
+            margin: auto;
+            padding: 75px;
+            padding-top: 41px;
+            margin-top: 23px;
+            margin-left: 305px;
+
+        }
+
+        h1 {
+            border: 2px solid red;
+            display: block;
+            background-color: rgb(233, 46, 13);
+            width: 30%;
+            text-align: center;
+            margin-left: 267px;
+            border-radius: 50px;
+        }
+
+        .form-group {
+            margin-left: 210px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: inline-block;
+            width: 300px;
+            padding: 5px;
+            margin: 3px;
+            border: 2px solid red;
+            font-family: 'Baloo Bhaina 2', cursive;
+            border-radius: 30px;
+            font-size: 20px;
+
+
+        }
+
+        .container button {
+            margin-left: 319px;
+            margin-top: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="forth.png" alt="not found">
+            <div>Farooq'site</div>
+        </div>
+
+
+
+        <div class="right">
+            <button class="btn">Join us</button>
+            <button class="btn">Email</button>
+        </div>
+
+
+
+
+        <div class="mid">
+            <ul class="nevbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About us</a> </li>
+                <li> <a href="#">Fee Criteria</a> </li>
+                <li> <a href="#">Membership</a> </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Login Form</h1>
+        <form action="no.php">
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+
+            <button class="btn">Submit</button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

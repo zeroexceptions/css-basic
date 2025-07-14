@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    
+    <style>
+    *{
+  box-sizing: border-box;
+    }
+    body{
+        font-family: cursive;
+    }
+    .container{
+           width:80%;
+           border: 5px solid rgb(175, 119, 129);
+           /* to in center a block; */
+           margin-top: 50px;
+           
+           /* margin-top: 2%; */
+           border-radius: 4px;
+           display: block;
+           margin: auto;
+           width: 50%;
+    }
+    .item{
+      
+        margin:0px 3px;             
+        padding: 0px 3px;           
+        background-color: blanchedalmond;
+        border:3px solid rgb(179, 172, 172);
+        display: inline-block;
+        margin: auto;
+        margin-left: 24px;
+        
+    }
+    #fruit{
+        float: left;
+        width :30%;
+    }
+    #vegetable{
+        
+        float: left;
+        width :30%;
+        
+    }
+    
+    #utensil{
+        /* iska mtlb k koi float left element mere opr na aye  */
+        clear: both;
+       
+        
+        width :30%;
+    }
+    p,h3{
+         text-align: center ;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div id="fruit" class="item">
+    <h3>Fruit</h3>
+    <p id="fruitpara" class="para">Lorem ipsum dolor sit, 
+        amet consectetur adipisicing
+         elit. Laborum quibusdam reprehenderit exercitationem 
+         quia doloremque deserunt assumenda laboriosam aperiam 
+         libero magnam.</p>
+    </div>
+
+    <div id="vegetable" class="item">
+        <h3>Vegetable</h3>
+        <p id="vegetablepara" class="para">Lorem ipsum dolor sit, 
+            amet consectetur adipisicing
+             elit. Laborum quibusdam reprehenderit exercitationem 
+             quia doloremque deserunt assumenda laboriosam aperiam 
+             libero magnam.</p>
+        </div>
+        <div id="utensil" class="item">
+            <h3>Utensil</h3>
+            <p id="utensilspara" class="para">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing
+                 elit. Laborum quibusdam reprehenderit exercitationem 
+                 quia doloremque deserunt assumenda laboriosam aperiam 
+                 libero magnam.</p>
+            </div>
+            
+
+
+
+
+
+
+    </div>
+</body>
+</html>

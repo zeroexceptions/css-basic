@@ -2,48 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags and forms</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing Example</title>
 
-    <style>
-        p {
-            display: inline-block;
-        }
+  <style>
+    .box {
+      height: 100px;
+      padding: 20px;
+      border: 5px solid black;
+      margin: 10px;
+      background-color: lightblue;
+    }
 
-        #p2 {
-            float: left;
-            border: 2px solid green;
-        }
+    .content-box {
+      box-sizing: content-box; /* Default */
+      width: 200px;
+    }
 
-        img {
+    .border-box {
+      box-sizing: border-box;
+      width: 200px;
+    }
 
-            float: left;
-
-        }
-    </style>
+    .label {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="label">box-sizing: content-box (default)</div>
+  <div class="box content-box">
+    This box has 200px width set, but padding + border added on top
+  </div>
 
-    <!-- we can only set overflow property to block elements and if we have 
-    set width and height of block element -->
-
-    <!-- The box-sizing property allows us to include the padding and border in an element's total width and height.
-
-If you set box-sizing: border-box; on an element, padding and border are included in the width and height: -->
-
-
-    <div class="container">
-        <img src="third.jpg" alt="">
-        <p id="p1">Farooq haider</p>
-        <p id="p2">Alvi hasdfas;dfaskd;ajdkf;asdfkd;fad;fad;</p>
-    </div>
+  <div class="label">box-sizing: border-box</div>
+  <div class="box border-box">
+    This box has 200px width set, and padding + border are inside it
+  </div>
 </body>
 
-
 </html>
+
+
+<!-- in case of  content-box
+ Actual Width  = content-width + (padding-left + padding-right) + (border-left + border-right)
+Actual Height = content-height + (padding-top + padding-bottom) + (border-top + border-bottom)
+
+ Width	200 (content) + 20×2 (padding) + 5×2 (border)	250px
+Height	100 (content) + 20×2 (padding) + 5×2 (border)	150px -->
+
+<!-- /// -->
+
+<!-- in case of border box
+Content Width  = declared-width - (padding-left + padding-right) - (border-left + border-right)
+Content Height = declared-height - (padding-top + padding-bottom) - (border-top + border-bottom)
+
+ Width	Total stays at 200px	✅
+Height	Total stays at 100px	✅
+Content	200 - (2×20 padding) - (2×5 border) = 150px width for content	
+Content	100 - (2×20 padding) - (2×5 border) = 50px height for content -->
+
+
+
 <!-- Div is blockelement -->
 <!-- name tag backend py save krny ka reference hota -->
 <!-- value tag screen py jis name se tag show hoga -->
@@ -56,3 +80,12 @@ me padding or border add hoky total width ko increase kr deta hai -->
 <!-- width + padding + border = actual width of an element
 height + padding + border = actual height of an element
  -->
+
+
+ 
+    <!-- we can only set overflow property to block elements and if we have 
+    set width and height of block element -->
+
+    <!-- The box-sizing property allows us to include the padding and border in an element's total width and height.
+
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height: -->

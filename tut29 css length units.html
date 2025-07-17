@@ -9,6 +9,58 @@
        
         
       
+
+
+* {
+  /* box-sizing: inherit; */
+}
+
+html {
+  /* box-sizing: border-box; */
+  font-size: 160px;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  
+  font-size: 12px;
+  /* box-sizing: border-box; */
+  width: 20px;
+}
+       .child{
+           
+        /* font-size: 2em;
+        padding: 3em;
+        width: 400px; */
+        border: 1px solid red;
+        width: 2em;
+        font-size: 12em;
+        line-height: 1;
+        padding:1em;
+        /* box-sizing: border-box; */
+       }
+          
+
+    </style>
+</head>
+<body>
+      
+    <div class="container">
+        <div class="child"> haider</div>
+    </div>
+</body>
+</html>
+
+<!-- Inline elements in CSS do have the properties of length and width,
+     but they behave differently than block-level elements. 
+     Inline elements only take up as much width as their content, and their height is determined 
+     by the line-height property. Therefore, setting the width or height properties on an inline 
+     element will not have any effect.
+     However, you can set other properties like padding, margin, and border on inline elements. -->
+
+
+
+     
         /* However, historically the default font size for 
         HTML was typically 16 pixels (px) for desktop browsers.
          This default font size was defined by the browser's default 
@@ -17,9 +69,9 @@
 
 
 
-/* em ka mtlb k apny parent k lehaz se us no se multiply kry  */
-/* ga jo no dy hm em k sath for example the font size of container is 2px and 
-then we set font size its child div to 2em it means div font size will be 4px  */       
+<!-- em ka mtlb k apny parent k lehaz se us no se multiply kry  
+ ga jo no dy hm em k sath for example the font size of container is 2px and 
+then we set font size its child div to 2em it means div font size will be 4px      
 /* or yh padding ko bi font se mult kr k btye ga agr hm padding ko em me set kry gy yani agr
  hm padding dety hai 3em then padding
 will be 12px*/
@@ -45,34 +97,4 @@ The element's container must have a defined width. This is because the element's
 If both of these conditions are met, setting margin: auto will center the element horizontally within its container.
 */
 
-/* we can not set heigh and width of inline elements */
-
-
-.container{
-  
-  font-size: 12px;
-}
-       .child{
-           
-        font-size: 2em;
-        padding: 3em;
-        border: 1px solid red;
-       } 
-          
-
-    </style>
-</head>
-<body>
-      
-    <div class="container">
-        <div class="child"> haider</div>
-    </div>
-</body>
-</html>
-
-<!-- Inline elements in CSS do have the properties of length and width,
-     but they behave differently than block-level elements. 
-     Inline elements only take up as much width as their content, and their height is determined 
-     by the line-height property. Therefore, setting the width or height properties on an inline 
-     element will not have any effect.
-     However, you can set other properties like padding, margin, and border on inline elements. -->
+/* we can not set heigh and width of inline elements  -->
